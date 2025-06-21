@@ -9,6 +9,7 @@ def mul(x,y):
 
 def div(x,y):
     return x/y
+
 def exp(x,y):
     return x**y
 
@@ -23,7 +24,7 @@ print("Division")
 print("exponential")
 print("Remainder")
 
-choice=input("Choose from(1/2/3/4/5/6) :")
+choice=input("Choose from(1/2/3/4/5/6):")
 num1 = float(input("Enter the first number : "))
 num2 = float(input("Enter the second number : "))
 
