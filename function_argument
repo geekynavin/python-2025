@@ -1,0 +1,9 @@
+#Functions in python 
+# function with default argument in Python
+
+def add(a=34,b=45):
+    print(a+b)
+    
+add()
+
+add(b=12)
