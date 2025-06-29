@@ -1,0 +1,29 @@
+#Program to know about the break and continue
+
+student_names = [
+    "Aarav Sharma",
+    "Isha Patel",
+    "Rohan Singh",
+    "Priya Verma",
+    "Vihaan Gupta",
+    "Ananya Rao",
+    "Dhruv Mehta",
+    "Sneha Joshi",
+    "Karan Nair",
+    "Tanvi Desai",
+    "Yash Agarwal",
+    "Pooja Sinha",
+    "Samar Choudhary",
+    "Meera Pillai",
+    "Aditya Reddy"
+]
+print("Director has hand shaked with these students :")
+
+
+for i in student_names:
+    if i == 'Karan Nair':
+        continue
+    print(i)
+  
+    if i == 'Pooja Sinha':
+        break
