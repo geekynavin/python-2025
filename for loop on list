@@ -1,0 +1,6 @@
+#for loop on list 
+#Iterating every element using for loop
+
+list1=['r',5,'h',2,9]
+for every_element in list1:
+    print(every_element)
