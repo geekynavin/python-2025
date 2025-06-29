@@ -1,0 +1,7 @@
+#Program to print table using while loop
+
+i = 1
+k = int(input("Enter the Number of which you want to see the table : "))
+while i<11:
+    print( k, "X", i , "=" , k*i)
+    i=i+1
