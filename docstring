@@ -1,0 +1,10 @@
+#What is doctring in python.
+#docstring nothing but a function with proper description is called docstring in python. It is useful for documenting our python codes.
+
+def mul(x,y):
+  ''' This is a function created for 
+  the multiplication of two numbers. '''
+  print(x*y)
+
+print(mul.__doc__)
+mul(23,5)
