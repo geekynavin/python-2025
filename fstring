@@ -1,0 +1,4 @@
+#fstring in python. Introduced in python 3.6 onwards
+name = "Navin"
+city = "Indore"
+print(f"Hey geeks my name is {name} and I'm from {city}.")
