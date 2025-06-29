@@ -1,0 +1,15 @@
+#working on Tuple in Python 
+#Tuple are immutable
+
+tup1 = (1)
+# this willbe consider as a string by python 
+print(type(tup1))
+
+tup2 = (1,)
+# this willbe consider as a Tuple by python 
+print(type(tup2))
+
+
+tup2 = (1,23,56,2,89,37,45,12,1,90,84,38,1,6,3,89,12)
+# find how many time 1 occur in this tuple
+print(tup2.count(1))
