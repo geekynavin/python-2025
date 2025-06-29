@@ -1,0 +1,14 @@
+#Functions in python 
+# function with variable length argument in Python
+
+def average(*numbers):
+    sum = 0
+    for i in numbers:
+        sum = (sum+i)
+        
+    print("The average is of your number is :",sum/len(numbers))
+        
+
+average(4,5,79,23)
+average(34,67,89)
+average(12,56,78,34,2446)
