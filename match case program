@@ -1,0 +1,21 @@
+#match case program
+#There no need to declare break statement after every cases it works by default as a break in python 3.10 onwards.
+
+print("In which course you want to Enroll :")
+print("\n 1.Python\n 2.Java\n 3.Javascript\n 4.Data Science ")
+x= int(input("Enter the your choice : "))
+match x:
+    case 1 :
+        print("You have selected Python Course")
+    
+    case 2:
+        print("You have selected Java Course")
+    
+    case 3:
+        print("You have selected JavaScript Course")    
+    
+    case 4:
+        print("You have selected Data Science Course")  
+    case _:
+        print("Wrong selection!")
+        print("Please choose between these choices only (1/2/3/4) ")
