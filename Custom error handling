@@ -1,0 +1,6 @@
+#Exception handling
+#Custom Error using raise keyword
+ 
+name = input("Enter a Name : ")
+if (name!='quit'):
+    raise MyError("Kya kar raha hai bhai tu!")
