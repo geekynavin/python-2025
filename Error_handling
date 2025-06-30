@@ -1,0 +1,15 @@
+#Exception handling
+#Try except finally
+
+
+
+try:
+    a = int(input("Enter a number : "))
+    division = 10/a
+    print("Your result is : ", (division))
+except ValueError as k:
+    print(k)
+except ZeroDivisionError as e:
+    print(e)
+finally:
+    print("But your program ran successfully")
