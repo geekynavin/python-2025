@@ -1,40 +1,50 @@
 #coding program 
-
 import random
-n = input("Enter your message you want to code : ")
-name = list(n)
-box = []
-letter_box = []
-
-
-if len(name)<3:
-    for i in name[::-1]:
-        print("Your coded message : ",i, end="")
-    
-else :
-    cont = name.pop(0)
-    name.append(cont)
-    for i in range(3):
-        box = random.choice(name)
-        letter_box.append(box)
-        random_letter = "".join(letter_box)
-        name = "".join(name)
-        message = random_letter + (name) + random_letter
-    print("We have received your message :",message)
+print("Enter your task you want to Perform :")
+print("1.Code")
+print("2.Decode")
+selection = int(input())
+match (selection):
+    case 1:
+        print("you have selected the Coding task!")
+        n = input("Enter your message you want to code : ")
+        name = list(n)
+        box = []
+        letter_box = []
+        
+        
+        if len(name)<3:
+            for i in name[::-1]:
+                print("Your coded message : ",i, end="")
+            
+        else :
+            cont = name.pop(0)
+            name.append(cont)
+            for i in range(3):
+                box = random.choice(name)
+                letter_box.append(box)
+                random_letter = "".join(letter_box)
+                name = "".join(name)
+                message = random_letter + (name) + random_letter
+            print("We have received your message :",message)
 
 
 
 #Decoding program
-
-m = input("Enter your message you want to decode :")
-if len(m)<3:
-    print(m[::-1])
-
-else:
-    box = m[3:len(m)-3]
-    cont = list(box)
-    k=cont.pop()
-    cont.insert(0,k)
-    cont = "".join(cont)
-    print("you decode message : ", cont)
+    case 2:
+        print("you have selected the Decoding task!")
+        m = input("Enter your message you want to decode :")
+        if len(m)<3:
+            print(m[::-1])
+        
+        else:
+            box = m[3:len(m)-3]
+            cont = list(box)
+            k=cont.pop()
+            cont.insert(0,k)
+            cont = "".join(cont)
+            print("you decode message : ", cont)
+    case _:
+        print("Invalid selection")
+    
     
