@@ -1,0 +1,19 @@
+import math
+print(math.sqrt(16))
+
+import math as m
+print(m.lcm(12,18))
+#recommended to use this in real time projects .....
+
+
+
+from math import floor
+print(floor(45.656578))
+
+from math import *
+print(factorial(5))
+print(sin(90))
+
+print(trunc(5.7))
+print(floor(4.7))
+print(ceil(4.7))
