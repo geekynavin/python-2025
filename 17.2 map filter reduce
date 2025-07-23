@@ -1,0 +1,42 @@
+# map filter reduce using lambda functin 
+#lambda arguments: expression
+
+
+
+#🔹 1. Lambda with map()
+# Applies a function to each item in a list.
+nums = [1,2,3,4]
+squares = list(map(lambda x:x*x, nums))
+print(squares)
+
+
+
+#🔹 2. Lambda with filter()
+# Filters items based on a condition.
+nums = [1,2,3,4]
+even = list(filter(lambda x: x%2==0, nums))
+print(even)
+
+
+
+#🔹 3. Lambda with reduce()
+# Performs a rolling computation. You need to import it:
+from functools import reduce
+nums = [1,2,3,4]
+product = reduce(lambda x,y:x*y,nums)
+print(product)
+
+
+
+# this can also do reduce functions
+# from functools import reduce
+nums = [1, 2, 3, 4,45,23,89,23]
+max_val = reduce(lambda x,y : x if x>y else y, nums)
+min_val = reduce(lambda x,y : x if x<y else y, nums)
+print(max_val)
+print(min_val)
+
+
+
+
+
