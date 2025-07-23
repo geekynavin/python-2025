@@ -1,4 +1,4 @@
-A lambda function is a small, anonymous function defined without a name using the keyword lambda.
+#A lambda function is a small, anonymous function defined without a name using the keyword lambda.
 
 
 add = lambda x, y: x + y
