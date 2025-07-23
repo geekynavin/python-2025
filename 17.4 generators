@@ -1,0 +1,36 @@
+✅ What is a Generator in Python?
+A generator is a special type of function that returns values one at a time, using yield instead of return.
+
+It remembers where it left off, so it can continue the next time you ask for a value.
+
+🔁 Think of it like:
+A generator is a lazy worker — it does only one thing at a time when asked, instead of doing everything at once like a list.
+
+
+🔹 Regular Function vs Generator
+🔸 Regular function:
+
+def get_numbers():
+    return [1, 2, 3]
+
+print(get_numbers())  # ➝ [1, 2, 3]
+
+
+✅ Real-Life Example: Countdown Generator
+
+def countdown(n):
+    while n > 0:
+        yield n
+        n -= 1
+
+for number in countdown(5):
+    print(number)
+
+
+  Output:
+
+5
+4
+3
+2
+1
