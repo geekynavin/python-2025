@@ -1,0 +1,12 @@
+def remind_homework(anyname):
+    def wrapper_but_you_can_keep_any_name():
+        print("📚 Do your homework first!")
+        print("✅ Now you're free to play.")
+        anyname()
+    return wrapper_but_you_can_keep_any_name
+
+@remind_homework
+def play_video_game():
+    print("🎮 Playing game...")
+
+play_video_game()
