@@ -3,4 +3,4 @@
  
 name = input("Enter a Name : ")
 if (name!='quit'):
-    raise MyError("Kya kar raha hai bhai tu!")
+    raise MyError("You can not enter quit")
