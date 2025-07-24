@@ -1,0 +1,27 @@
+class Student:
+    def __init__(self,x,y,z):
+        self.name = x
+        self.age = y
+        self.city = z
+    def display(self):
+        print(f"Name:{self.name}\nage:{self.age}\ncity:{self.city}")
+        print("-------------------------")
+    
+s1=Student("Navin",25,"Indore")
+s1.display()
+s2=Student("Rohit",23,"Mumbai")
+s2.display()
+
+
+output: 
+
+Name:Navin
+age:25
+city:Indore
+-------------------------
+Name:Rohit
+age:23
+city:Mumbai
+-------------------------
+
+=== Code Execution Successful ===
