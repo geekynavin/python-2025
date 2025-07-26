@@ -5,7 +5,7 @@ class Car:
         self.auto = auto
 
     def show(self):
-        print(f"Brand: {self.brand}, Speed: {self.speed} km/h, 'Auto: {self.auto}")
+        print(f"Brand: {self.brand}\nSpeed: {self.speed} km/h\nAutomatic: {self.auto}")
     
 
 # Create object
