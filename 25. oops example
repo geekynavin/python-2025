@@ -1,0 +1,11 @@
+class Car:
+    def __init__(self, brand, speed):
+        self.brand = brand
+        self.speed = speed
+
+    def show(self):
+        print(f"Brand: {self.brand}, Speed: {self.speed} km/h")
+
+# Create object
+c1 = Car("Toyota", 120)
+c1.show()
