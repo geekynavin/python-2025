@@ -1,0 +1,21 @@
+class Outer:
+    def __init__(self):
+        print("outer class object created")
+    class Inner:
+        def __init__(self):
+            print("inner class object created")
+        def m1(self):
+            print("I'm from the inner class")
+
+o = Outer()
+i = o.Inner()
+i.m1()
+
+
+output :
+
+outer class object created
+inner class object created
+I'm from the inner class
+
+=== Code Execution Successful ===
