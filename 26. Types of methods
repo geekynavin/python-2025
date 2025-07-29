@@ -17,3 +17,45 @@ a.walk('Cat')
 
 # or directly
 Animal.walk("Elephant")
+
+
+
+
+example of staticmethod :
+✅ @staticmethod in Python — Explained Clearly
+In Python, a @staticmethod is a method inside a class that:
+
+Does not use self (instance)
+Does not use cls (class)
+Is just a regular function placed inside a class for organization
+
+Syntax :
+class MyClass:
+    @staticmethod
+    def my_static_method():
+        print("This is a static method")
+
+class MathOperations:
+    @staticmethod
+    def add(x, y):
+        return x + y
+
+# Usage
+print(MathOperations.add(10, 5))  # ✅ Call without creating an object
+
+obj = MathOperations()
+print(obj.add(3, 4))              # ✅ Can also be called from instance
+
+
+
+
+Real use case of staticmethod @staticmethod
+
+class Temperature:
+    @staticmethod
+    def celsius_to_fahrenheit(c):
+        return (c * 9/5) + 32
+
+print(Temperature.celsius_to_fahrenheit(25))  # Output: 77.0
+
+
