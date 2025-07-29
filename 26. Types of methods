@@ -1,0 +1,19 @@
+There are 3 types of method in python 
+1.Instance method
+2.class @classmethod
+3.static @staticmethod
+
+example of classmethod (cls keyword is used as its first argument which is must)
+
+class Animal:
+    legs = 4
+    @classmethod
+    def walk(cls,name):
+        print(f"{name} walks with {cls.legs} legs")
+        
+a =  Animal()
+a.walk('Dog')
+a.walk('Cat')
+
+# or directly
+Animal.walk("Elephant")
